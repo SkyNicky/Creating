@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundContainer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contentContainer {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.storeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.storeImage {
+    width: 100%;
+    height: auto;
+}
+
+.storeText {
+    padding: 20px;
+}
+
+.storeTitle {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.storeParagraph {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.textContainer {
+    flex: 1;
+    padding: 20px;
+}
+
+.textContainer p,
+.textContainer h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}

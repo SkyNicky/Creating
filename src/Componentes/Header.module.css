@@ -1,0 +1,22 @@
+.navContainer {
+    padding: 0 20px;
+  }
+  
+  .navbarBrand {
+    color: 'black' !important;
+    font-size: 2rem;
+  }
+  
+  .navLink {
+    color: 'black' !important;
+    font-size: 2,5rem;
+    margin-right: 15px;
+  }
+  
+  .navLink:hover {
+    color: #ccc;
+  }
+  .bg-custom {
+    background-color: 'black'; 
+  }
+  

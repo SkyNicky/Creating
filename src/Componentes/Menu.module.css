@@ -1,0 +1,10 @@
+.card {
+    background-color: var(--btOrange);
+    border: 0px;
+}
+    
+.image{
+    width: 210px;
+    height:210px;
+    object-fit: cover;
+}

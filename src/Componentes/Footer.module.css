@@ -1,0 +1,31 @@
+.footer {
+  background-color: #e65100;
+  color: 'black' !important;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.infoFooter1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.infoFooter1 a {
+  color: #fff;
+  text-decoration: none; 
+}
+
+.infoFooter1 a:hover {
+  text-decoration: underline;
+}
+
+.footer section {
+  text-align: center;
+}
+
+.footer .copyright {
+  font-size: 14px;
+}

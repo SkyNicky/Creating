@@ -1,0 +1,50 @@
+.container {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Merriweather", serif;
+}
+
+.message {
+    font-size: 2rem;
+    margin-bottom: 150px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content {
+    margin-top: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .messageContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .message {
+    margin-right: 10px; 
+  }
+  .button {
+    background-color: black;
+    color: #dd8818;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .video {
+    width: 100%;  
+    max-width: 800px;  
+    height: auto;  
+}
