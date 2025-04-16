@@ -30,21 +30,21 @@ export function AppMenu() {
 
       <section id="hamburguer" className={styles.section}>
         <h2 className={styles.titleSection}>Hambúrgueres</h2>
-        <Carousel className={styles.carousel} infinite={true} responsive={responsive}>
+        <Carousel className={styles.carousel} infinite={true} responsive={responsive} itemClass={styles.carouselItem}>
           {hamburguer}
         </Carousel>
       </section>
 
       <section id="hotdog" className={styles.section}>
         <h2 className={styles.titleSection}>Hot Dogs</h2>
-        <Carousel className={styles.carousel} infinite={true} responsive={responsive}>
+        <Carousel className={styles.carousel} infinite={true} responsive={responsive} itemClass={styles.carouselItem}>
           {hotdog}
         </Carousel>
       </section>
 
       <section id="porcoes" className={styles.section}>
         <h2 className={styles.titleSection}>Porções</h2>
-        <Carousel className={styles.carousel} infinite={true} responsive={responsive}>
+        <Carousel className={styles.carousel} infinite={true} responsive={responsive} itemClass={styles.carouselItem}>
           {porcao}
         </Carousel>
       </section>
