@@ -1,6 +1,9 @@
 .card {
   background-color: var(--btOrange);
   border: none;
+  transition: none !important; /* remove hover estranho */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* sombra leve */
+  border-radius: 16px;
 }
 
 .image {
