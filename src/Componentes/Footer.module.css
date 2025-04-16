@@ -1,31 +1,60 @@
+/* Estilo principal do footer */
 .footer {
-  background-color: #e65100;
-  color: 'black' !important;
-  padding: 20px 0;
+  background-color: #e65100; /* Cor laranja */
+  color: white; /* Cor do texto em branco */
+  padding: 30px 20px; /* Mais espaço interno */
   text-align: center;
+  border-top: 1px solid #333; /* Linha separando o footer */
 }
 
-
+/* Container com as informações de contato e horário */
 .infoFooter1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  gap: 10px; /* Espaçamento entre os itens */
 }
 
+/* Estilo para os parágrafos dentro de infoFooter1 */
+.infoFooter1 p {
+  margin: 5px 0;
+  font-size: 1rem; /* Font tamanho ajustado */
+  color: #fff;
+}
+
+/* Link dentro do footer */
 .infoFooter1 a {
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .infoFooter1 a:hover {
   text-decoration: underline;
 }
 
+/* Seção com copyright */
 .footer section {
-  text-align: center;
+  margin-top: 20px; /* Espaçamento superior */
 }
 
 .footer .copyright {
-  font-size: 14px;
+  font-size: 0.875rem; /* Tamanho menor para o copyright */
+  color: #f0f0f0;
+}
+
+/* Breakpoint para mobile: ajustando layout para telas pequenas */
+@media (max-width: 480px) {
+  .infoFooter1 {
+    flex-direction: column; /* Empilhar em vez de alinhar horizontalmente */
+    align-items: center; 
+  }
+
+  .footer {
+    padding: 20px 15px; /* Menos padding nas telas pequenas */
+  }
+
+  .footer .copyright {
+    font-size: 0.75rem; /* Tamanho menor no copyright */
+  }
 }
