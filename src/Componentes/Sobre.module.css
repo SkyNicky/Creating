@@ -1,4 +1,6 @@
-/* Container principal: garante fundo neutro e sem overflow */
+/* Sobre.module.css */
+
+/* 1. Container principal: sem scroll horizontal */
 .container {
   display: flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
   overflow-x: hidden;
 }
 
-/* Hero banner */
+/* 2. Banner */
 .backgroundContainer {
   position: relative;
   width: 100%;
@@ -19,6 +21,7 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(50%);
+  display: block;
 }
 .title {
   position: absolute;
@@ -28,9 +31,10 @@
   font-size: 4rem;
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
-/* Conteúdo principal: centralizado, sem scroll, com gap generoso */
+/* 3. Conteúdo principal */
 .contentContainer {
   display: flex;
   flex-wrap: wrap;
@@ -41,15 +45,13 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* Cada coluna — imagem e texto — ocupa até 45% da largura, mínimo 280px */
 .storeContainer,
 .textContainer {
   flex: 1 1 45%;
   min-width: 280px;
 }
 
-/* Imagem da loja: ocupa 100% do container, sempre responsiva */
+/* 4. Imagem da loja */
 .storeImage {
   width: 100%;
   height: auto;
@@ -60,14 +62,12 @@
   transform: scale(1.03);
 }
 
-/* Caixa de texto: fundo branco, bordas arredondadas e padding */
+/* 5. Caixa de texto */
 .textContainer {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
 }
-
-/* Títulos das seções */
 .subtitle {
   font-size: 2rem;
   font-weight: bold;
@@ -75,8 +75,6 @@
   color: #e65100;
   text-align: center;
 }
-
-/* Parágrafos: legíveis e justificados */
 .paragraph {
   font-size: 1.15rem;
   line-height: 1.6;
@@ -85,12 +83,7 @@
   margin-bottom: 24px;
 }
 
-/* Quebra de linha antes de cada subtitle para dar espaço */
-.textContainer h2 + p {
-  margin-top: 8px;
-}
-
-/* BREAKPOINT: tablet e mobile */
+/* 6. Responsividade */
 @media (max-width: 1024px) {
   .contentContainer {
     flex-direction: column;
@@ -101,8 +94,6 @@
     flex: 1 1 100%;
   }
 }
-
-/* Ajustes finais para telas bem pequenas */
 @media (max-width: 480px) {
   .title {
     font-size: 3rem;
