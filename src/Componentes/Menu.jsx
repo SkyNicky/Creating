@@ -2,7 +2,6 @@ import React from "react";
 import {
   Box,
   Button,
-  ButtonGroup,
   Center,
   Divider,
   Heading,
@@ -12,44 +11,128 @@ import {
   Card,
   CardBody,
   CardFooter,
-} from '@chakra-ui/react';
-import styles from './Menu.module.css';
+} from "@chakra-ui/react";
+import styles from "./Menu.module.css";
 
-function ProductCard({ url, name, price }) {
+export function Hamburguers(props) {
   return (
-    <Card maxW='sm' className={styles.card}>
-      <CardBody className={styles.cardBody}>
-        <Center>
+    <Card
+      maxW="sm"
+      w="250px"
+      h="380px"
+      borderRadius="2xl"
+      boxShadow="lg"
+      bg="white"
+      overflow="hidden"
+    >
+      <CardBody className={styles.card} p="4">
+        <Center mb="3">
           <Image
+            src={props.url}
+            alt={props.name}
             className={styles.image}
-            src={url}
-            alt={name}
-            borderRadius='lg'
+            borderRadius="md"
+            boxSize="180px"
+            objectFit="cover"
           />
         </Center>
-        <Stack mt='6' spacing='3' alignItems='center'>
-          <Heading size='md' textAlign='center'>{name}</Heading>
-          <Text color='blue.600' fontSize='2xl'>{price}</Text>
+        <Stack spacing="2" align="center">
+          <Heading size="sm" noOfLines={2} textAlign="center">
+            {props.name}
+          </Heading>
+          <Text color="blue.600" fontSize="xl" fontWeight="bold">
+            {props.price}
+          </Text>
         </Stack>
       </CardBody>
       <Divider />
-      <CardFooter className={styles.footer}>
-        <ButtonGroup spacing='2'>
-          <Button variant='solid' colorScheme='blue' _hover={{ transform: "scale(1.05)" }}>
-            Adicionar
-          </Button>
-        </ButtonGroup>
+      <CardFooter justifyContent="center" bg="#e65100">
+        <Button colorScheme="blue" size="sm">
+          Adicionar
+        </Button>
       </CardFooter>
     </Card>
   );
 }
 
-export function Hamburguers(props) {
-  return <ProductCard {...props} />;
-}
 export function HotD(props) {
-  return <ProductCard {...props} />;
+  return (
+    <Card
+      maxW="sm"
+      w="250px"
+      h="380px"
+      borderRadius="2xl"
+      boxShadow="lg"
+      bg="white"
+      overflow="hidden"
+    >
+      <CardBody className={styles.card} p="4">
+        <Center mb="3">
+          <Image
+            src={props.url}
+            alt={props.name}
+            className={styles.image}
+            borderRadius="md"
+            boxSize="180px"
+            objectFit="cover"
+          />
+        </Center>
+        <Stack spacing="2" align="center">
+          <Heading size="sm" noOfLines={2} textAlign="center">
+            {props.name}
+          </Heading>
+          <Text color="blue.600" fontSize="xl" fontWeight="bold">
+            {props.price}
+          </Text>
+        </Stack>
+      </CardBody>
+      <Divider />
+      <CardFooter justifyContent="center" bg="#e65100">
+        <Button colorScheme="blue" size="sm">
+          Adicionar
+        </Button>
+      </CardFooter>
+    </Card>
+  );
 }
+
 export function Porcoes(props) {
-  return <ProductCard {...props} />;
+  return (
+    <Card
+      maxW="sm"
+      w="250px"
+      h="380px"
+      borderRadius="2xl"
+      boxShadow="lg"
+      bg="white"
+      overflow="hidden"
+    >
+      <CardBody className={styles.card} p="4">
+        <Center mb="3">
+          <Image
+            src={props.url}
+            alt={props.name}
+            className={styles.image}
+            borderRadius="md"
+            boxSize="180px"
+            objectFit="cover"
+          />
+        </Center>
+        <Stack spacing="2" align="center">
+          <Heading size="sm" noOfLines={2} textAlign="center">
+            {props.name}
+          </Heading>
+          <Text color="blue.600" fontSize="xl" fontWeight="bold">
+            {props.price}
+          </Text>
+        </Stack>
+      </CardBody>
+      <Divider />
+      <CardFooter justifyContent="center" bg="#e65100">
+        <Button colorScheme="blue" size="sm">
+          Adicionar
+        </Button>
+      </CardFooter>
+    </Card>
+  );
 }
