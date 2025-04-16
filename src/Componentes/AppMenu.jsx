@@ -28,12 +28,6 @@ export function AppMenu() {
     <div className={styles.container}>
       <h1 className={styles.title}>Menu</h1>
 
-      <div className={styles.categories}>
-        <button onClick={() => scrollToSection('hamburguer')}>Hambúrgueres</button>
-        <button onClick={() => scrollToSection('hotdog')}>Hot Dogs</button>
-        <button onClick={() => scrollToSection('porcoes')}>Porções</button>
-      </div>
-
       <section id="hamburguer" className={styles.section}>
         <h2 className={styles.titleSection}>Hambúrgueres</h2>
         <Carousel className={styles.carousel} infinite={true} responsive={responsive}>
