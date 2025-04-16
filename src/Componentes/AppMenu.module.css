@@ -5,6 +5,11 @@
   padding: 2rem 1rem;
 }
 
+.carouselItem {
+  display: flex;
+  justify-content: center;
+}
+
 .section {
   margin-bottom: 3rem;
   width: 100%;
