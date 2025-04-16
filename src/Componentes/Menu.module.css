@@ -12,3 +12,41 @@
   object-fit: cover;
   border-radius: 12px;
 }
+
+.name {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.price {
+  color: #2563eb;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.addButton {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #2563eb;
+}
